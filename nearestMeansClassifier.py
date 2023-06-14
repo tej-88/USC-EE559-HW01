@@ -60,3 +60,7 @@ class NearestMeansClassifier():
     def get_l2_norm(self, a, b):
         e = a - b
         return np.sqrt(np.dot(e.T, e))
+
+    
+    def get_error_rate(self, y, y_hat):
+        return (sum(y != y_hat) / len(y)) * 100
