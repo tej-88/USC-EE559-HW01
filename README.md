@@ -16,4 +16,15 @@ Training Data Decision Boundary:
 ![Training Data Decision Boundary](./synthetic_1/y_train.png)
 
 Predicted Training Data Decision Boundary:  
-![Predicted Training Data Decision Boundary](./synthetic_1/y_train_hat.png)
+![Predicted Training Data Decision Boundary](./synthetic_1/y_train_hat.png)  
+
+## Synthetic-2  
+Model: Nearest Means Classifier  
+Training Error Rate: 3.00%  
+Test Error Rate: 4.00%  
+
+Training Data Decision Boundary:  
+![Training Data Decision Boundary](./synthetic_2/y_train.png)
+
+Predicted Training Data Decision Boundary:  
+![Predicted Training Data Decision Boundary](./synthetic_2/y_train_hat.png)
