@@ -68,3 +68,8 @@ class NearestMeansClassifier():
     
     def get_class_means(self):
         return self.means
+
+    
+    def plot_boundary(self, X, y):
+        plotDecBoundaries(X[:, self.features_idx], y, self.means)
+        return
