@@ -47,7 +47,7 @@ model.plot_boundary(X_train, y_train_predict)
 
 #Predict the TEST DATA
 y_test_predict = model.predict(X_test)
-
+    
 #Error Rate on TEST DATA
 test_error_rate = model.get_error_rate(y_test, y_test_predict)
 
