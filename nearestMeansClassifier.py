@@ -33,3 +33,16 @@ class NearestMeansClassifier():
             self.means[j, :] = total_sum[j,:] / N[j]
         
         return
+
+
+    def predict(self, X):
+        N = len(X)
+
+        y_hat = np.empty((N,))
+
+        for i in range(N):
+            y_hat[i] = self.get_nearest_class(X[i, self.features_idx])
+        
+        y_hat = y_hat.astype('int32')
+
+        return y_hat
