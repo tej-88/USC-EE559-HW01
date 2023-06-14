@@ -5,3 +5,10 @@
 
 import numpy as np
 from plotDecBoundaries import plotDecBoundaries
+
+class NearestMeansClassifier():
+    def __init__(self):
+        self.C = 0
+        self.means = None
+        self.classes = None
+        self.features_idx = None
