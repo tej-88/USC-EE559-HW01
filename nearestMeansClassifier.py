@@ -46,3 +46,12 @@ class NearestMeansClassifier():
         y_hat = y_hat.astype('int32')
 
         return y_hat
+
+
+    def get_nearest_class(self, x):
+        l2_distances = np.empty((self.C, ))
+
+        for i in range(self.C):
+            l2_distances[i] = self.get_l2_norm(self.means[i, :], x)
+        
+        return self.classes[np.argmin(l2_distances)]
