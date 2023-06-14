@@ -64,3 +64,7 @@ class NearestMeansClassifier():
     
     def get_error_rate(self, y, y_hat):
         return (sum(y != y_hat) / len(y)) * 100
+
+    
+    def get_class_means(self):
+        return self.means
