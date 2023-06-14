@@ -55,3 +55,8 @@ class NearestMeansClassifier():
             l2_distances[i] = self.get_l2_norm(self.means[i, :], x)
         
         return self.classes[np.argmin(l2_distances)]
+
+    
+    def get_l2_norm(self, a, b):
+        e = a - b
+        return np.sqrt(np.dot(e.T, e))
